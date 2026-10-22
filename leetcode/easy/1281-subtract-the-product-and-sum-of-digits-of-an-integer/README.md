@@ -45,29 +45,27 @@ Result = 32 - 11 = 21
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.9 MB (beats 19.47%)  
-**Submitted:** 2026-10-22T08:57:33.955Z  
+**Language:** Java  
+**Runtime:** 0 ms  
+**Memory:** 41.6 MB  
+**Submitted:** 2026-10-22T08:58:03.239Z  
 
-```cpp
-
+```java
 class Solution {
-public:
-    int subtractProductAndSum(int n) {
-        int product = 1, sum = 0;
-
-        while (n > 0) {
-            int digit = n % 10;
-            product *= digit;
-            sum += digit;
-            n /= 10;
-        }
-
-        return product - sum;
+    public int subtractProductAndSum(int n) {
+      int prod=1;
+      int sum=0;
+      int diff;
+      while(n>0){
+        n = n%10;
+        prod = prod * n;
+        sum = sum + n;
+        n /= 10;
+      }
+      diff = prod - sum;
+      return diff;
     }
-};
-
+}
 ```
 
 ---
