@@ -54,9 +54,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 6 ms (beats 23.31%)  
-**Memory:** 8.4 MB (beats 90.51%)  
-**Submitted:** 2026-10-24T14:37:51.813Z  
+**Runtime:** 7 ms (beats 19.73%)  
+**Memory:** 8.6 MB (beats 64.26%)  
+**Submitted:** 2026-10-24T18:08:34.503Z  
 
 ```cpp
 class Solution {
@@ -65,6 +65,9 @@ public:
 
         if(x<0) {
            return false; 
+        }
+        else if(0<x&&x<10){
+            return true;
         }
         else{
             int original =x;
