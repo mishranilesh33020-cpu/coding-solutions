@@ -45,34 +45,31 @@ Output: [48,55,66,77]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 21.23%)  
-**Memory:** 8.9 MB (beats 97.98%)  
-**Submitted:** 2026-10-25T16:21:51.300Z  
+**Runtime:** 2 ms (beats 16.44%)  
+**Memory:** 9 MB (beats 97.98%)  
+**Submitted:** 2026-10-25T16:23:10.678Z  
 
 ```cpp
 class Solution {
 public:
+    bool check(int n, int num) {
+        if (n == 0)
+            return true;
+
+        int digit = n % 10;
+
+        if (digit == 0 || num % digit != 0)
+            return false;
+
+        return check(n / 10, num);
+    }
+
     vector<int> selfDividingNumbers(int left, int right) {
         vector<int> ans;
 
         for (int i = left; i <= right; i++) {
-            int n = i;
-            bool valid = true;
-
-            while (n > 0) {
-                int digit = n % 10;
-
-                if (digit == 0 || i % digit != 0) {
-                    valid = false;
-                    break;
-                }
-
-                n /= 10;
-            }
-
-            if (valid ? true : false) {
+            if (check(i, i))
                 ans.push_back(i);
-            }
         }
 
         return ans;
