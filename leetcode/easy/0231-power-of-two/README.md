@@ -56,8 +56,8 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.9 MB (beats 12.01%)  
-**Submitted:** 2026-10-27T04:28:47.174Z  
+**Memory:** 7.7 MB (beats 97.18%)  
+**Submitted:** 2026-10-27T04:29:45.694Z  
 
 ```cpp
 
