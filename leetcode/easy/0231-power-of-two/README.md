@@ -54,14 +54,15 @@ Output: false
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 41.4 MB  
-**Submitted:** 2026-10-27T04:25:26.347Z  
+**Memory:** 7.5 MB  
+**Submitted:** 2026-10-27T04:26:07.119Z  
 
-```java
+```cpp
 class Solution {
-    public boolean isPowerOfTwo(int n) {
+public:
+    bool isPowerOfTwo(int n) {
         if (n<=0) return false;
         int x=1;
         while(x<=n){
@@ -71,8 +72,9 @@ class Solution {
             x=x*2;
         }
         return false;
+    
     }
-}
+};
 ```
 
 ---
