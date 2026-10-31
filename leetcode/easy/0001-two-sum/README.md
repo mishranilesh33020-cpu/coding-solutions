@@ -64,9 +64,9 @@ The sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Ther
 ## Solution
 
 **Language:** Go  
-**Runtime:** 0 ms  
-**Memory:** 3.8 MB  
-**Submitted:** 2026-10-31T04:34:50.752Z  
+**Runtime:** 1 ms (beats 60.53%)  
+**Memory:** 6 MB (beats 14.10%)  
+**Submitted:** 2026-10-31T04:34:56.774Z  
 
 ```go
 func twoSum(nums []int, target int) []int {
